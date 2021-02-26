@@ -1,0 +1,19 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: configserver
+  profiles:
+    active: native
+  cloud:
+    config:
+      discovery:
+        enabled: false
+        instanceId: ${spring.application.name}:${random.value}
+      host: consul
+      port: 8500
+      server:
+        native:
+          # set the search location to wherever this project is
+          searchLocations: "/home/pcoates/projects/configserver/config"
