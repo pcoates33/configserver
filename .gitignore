@@ -1,0 +1,15 @@
+**/.vscode/
+**/.idea/
+**/*.project
+**/*.classpath
+**/*.iml
+**/target/
+**/.settings/
+**/log/
+**/*.log
+**/logs/
+**/out/
+**/build/
+**/.gradle/
+**/bin/
+/.nb-gradle/
